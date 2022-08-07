@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { FixedNavSpacer, ToggleSwitch } from "./globalStyledComponents";
 // Images
-import Logo from "../images/logo.svg";
+import wolf from "../images/wolficon.png";
 
 export default function NavBar() {
   const { theme, isExpanded, toggleExpanded, closeExpanded } = useAppContext();
@@ -26,7 +26,7 @@ export default function NavBar() {
           <Navbar.Brand>
             <img
               alt="React Logo"
-              src={Logo}
+              src={wolf}
               width="35"
               height="35"
               className="d-inline-block align-top bg-dark rounded-circle nav-logo"

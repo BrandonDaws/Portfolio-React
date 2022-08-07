@@ -11,11 +11,14 @@ import {
 import { SiJavascript, SiStyledcomponents, SiRedux } from "react-icons/si";
 
 // Projects Images (add your images to the images directory and import below)
-import Logo from "./images/logo.svg";
+
+import note from "./images/noteIcon.jpg";
+import rack from "./images/rackIcon.png";
+import git from "./images/gitIcon.jpg";
 
 // Hero Images (add your images to the /images directory with the same names)
 import HeroLight from "./images/hero-light.jpg";
-import HeroDark from "./images/hero-dark.jpg";
+import HeroDark from "./images/DarkBg.png";
 // If you change the import names above then you need to change the export names below
 export { HeroLight as Light };
 export { HeroDark as Dark };
@@ -24,7 +27,7 @@ export { HeroDark as Dark };
  **************************************************************
   Add your GitHub username (string - "YourUsername") below.
 */
-export const githubUsername = "Your GitHub username here";
+export const githubUsername = "BrandonDaws";
 
 // Blog link icon (imported above)
 export const Blog = <FaLink />;
@@ -34,7 +37,7 @@ export const Blog = <FaLink />;
   Add a second paragraph for the about me section.
 */
 export const moreInfo =
-  "I enjoy learning about technology and helping others use it to improve their lives and be more productive. I built this site with React, Bootstrap, Redux, and the GitHub REST API.";
+  "I am a US Navy Veteran and a Proud new Web Developer in the process of making a huge leap into a new field. You can see a few of the project ive been involved in the past and am always looking for exciting new projects to work on! I love meeting and working with new people and being able to learn under someone elses mentorship."
 
 /* Skills
  ************************************************************** 
@@ -88,21 +91,26 @@ export const skillData = [
   },
 ];
 
-// Resume link (string - "https://YourResumeUrl") - I am using CloudFront to share my resume (https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)
+
 export const resume = null;
 
-/* Projects
- ************************************************************** 
-  List the repo names (string - "your-repo-name") you want to include (they will be sorted alphabetically). If empty, only the first 3 will be included.
-*/
-export const filteredProjects = ["example-1", "example-2", "example-3"];
+
+export const filteredProjects = ["rack-em-up", "git-it-done", "taker-notes"];
 
 // Replace the defualt GitHub image for matching repos below (images imported above - lines 13-14)
 export const projectCardImages = [
   {
-    name: "example-1",
-    image: Logo,
+    name: "rack-em-up",
+    image: rack,
   },
+  {
+    name: "git-it-done",
+    image: git,
+  },
+  {
+    name: "taker-notes",
+    image: note,
+  }
 ];
 
 /* Contact Info
